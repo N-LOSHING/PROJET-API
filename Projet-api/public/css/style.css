@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#taskForm, #taskDetail {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.hidden {
+    display: none;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+button {
+    text-decoration: none;
+    padding: 10px;
+    font-family: arial;
+    font-size: 0.7em;
+    color: #FF6200;
+    background-color: #2E8ECE;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border: 2px solid #F0FC00;
+    box-shadow: 3px 3px 8px #CC0808;
+    -webkit-box-shadow: 3px 3px 8px #CC0808;
+    -moz-box-shadow: 3px 3px 8px #CC0808;
+}
+
+button:hover {
+    padding: 10px;
+    background-color: #0070c0;
+    box-shadow: 3px 3px 8px #2E8ECE;
+    -webkit-box-shadow: 3px 3px 8px #2E8ECE;
+    -moz-box-shadow: 3px 3px 8px #2E8ECE;
+}
+
+#taskList li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.Titre {
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: #F0FC00 2px 2px 0, #FF6200 4px 4px 0, #CC0808 6px 6px 0.5px, #333 8px 11px 10px;
+    color: #FFFEA5;
+    background-color: #2E8ECE;
+    border-radius: 20px;
+}

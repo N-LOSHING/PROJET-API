@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <h1 class="Titre">Liste des Tâches</h1>
+        <button id="addTaskBtn">Ajouter une nouvelle tâche</button>
+        <div id="taskForm" class="hidden">
+            <h2 id="taskFormTitle">Ajouter une nouvelle tâche</h2>
+            <form id="taskFormElement" data-task-id="">
+                <label>
+                    Date de début:
+                    <input type="date" name="date" id="taskDate" required>
+                </label>
+                <label>
+                    Temps nécessaire (heures):
+                    <input type="number" name="time" id="taskTime" required>
+                </label>
+                <label>
+                    Description:
+                    <textarea name="description" id="taskDescription" required></textarea>
+                </label>
+                <label>
+                    Compétences:
+                    <textarea name="skills" id="taskSkills" required></textarea>
+                </label>
+                <label>
+                    Commentaire:
+                    <textarea name="comment" id="taskComment" required></textarea>
+                </label>
+                <label>
+                    Note de satisfaction (1 à 4):
+                    <input type="range" name="rating" id="taskRating" min="1" max="4" required>
+                </label>
+                <label>
+                    Difficulté:
+                    <select name="difficulty" id="taskDifficulty" required>
+                        <option value="trivial">Trivial</option>
+                        <option value="facile">Facile</option>
+                        <option value="intermédiaire">Intermédiaire</option>
+                        <option value="difficile">Difficile</option>
+                        <option value="legendary">Legendary</option>
+                        <option value="trop dur">Trop dur</option>
+                    </select>
+                </label>
+                <label>
+                    Tâche terminée:
+                    <input type="checkbox" name="completed" id="completed">
+                </label>
+                <button type="submit">Enregistrer</button>
+                <button type="button" id="cancelBtn">Annuler</button>
+            </form>
+        </div>
+        <div id="taskDetail" class="hidden">
+            <h2>Détails de la Tâche</h2>
+            <p><strong>Date:</strong> <span id="detailDate"></span></p>
+            <p><strong>Description:</strong> <span id="detailDescription"></span></p>
+            <p><strong>Temps:</strong> <span id="detailTime"></span> heures</p>
+            <p><strong>Compétences:</strong> <span id="detailSkills"></span></p>
+            <p><strong>Commentaire:</strong> <span id="detailComment"></span></p>
+            <p><strong>Note:</strong> <span id="detailRating"></span>/4</p>
+            <p><strong>Difficulté:</strong> <span id="detailDifficulty"></span></p>
+            <p><strong>Terminée:</strong> <span id="detailCompleted"></span></p>
+            <button id="closeDetailBtn">Fermer</button>
+        </div>
+    </div>
+        <ul id="taskList"></ul>
+    <script src="js/script.js"></script>
+</body>
+</html>
